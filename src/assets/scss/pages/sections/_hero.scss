@@ -1,0 +1,149 @@
+.hero {
+  position: absolute;
+  top: 24%;
+  width: 100%;
+  .container {
+    max-width: 1329px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    .row {
+      justify-content: space-between;
+      .left {
+        width: 34.76%;
+        text-align: left;
+        color: #2f1c6a;
+        .top {
+          margin-bottom: 24px;
+          h2 {
+            font-size: 20px;
+            line-height: 32px;
+            margin-bottom: 8px;
+            span {
+              color: #673de6;
+              font-weight: 700;
+              margin: 0 8px;
+            }
+          }
+          h1 {
+            font-size: 36px;
+            line-height: 40px;
+            font-weight: 700;
+          }
+        }
+        .middle {
+          margin-bottom: 25px;
+          .services {
+            margin-bottom: 8px;
+            line-height: 24px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            .check {
+              margin-right: 8px;
+              fill: green;
+            }
+            .info {
+              margin-left: 8px;
+              cursor: pointer;
+              position: relative;
+              &:hover {
+                .infoBox {
+                  display: block;
+                }
+              }
+            }
+            .infoBox {
+              color: #fff;
+              background-color: #5025d1;
+              max-width: 240px;
+              padding: 24px;
+              border-radius: 5px;
+              font-size: 14px;
+              display: none;
+              position: absolute;
+              z-index: 1000;
+            }
+            .infoBoxFirst {
+              position: absolute;
+              left: 17%;
+              top: 75%;
+            }
+            .infoBoxSecond {
+              position: absolute;
+              left: 21%;
+              top: 89%;
+            }
+          }
+        }
+        .bottom {
+          .price {
+            .priceTime {
+              font-size: 20px;
+              line-height: 34px;
+            }
+            .priceNum {
+              line-height: 56px;
+              font-size: 48px;
+              font-weight: 700;
+            }
+          }
+          .month {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 700;
+            margin: 10px 0;
+          }
+          .countDownBox {
+            font-size: 60px;
+            margin-top: 20px;
+          }
+          .btnBox {
+            margin-top: 20px;
+            a {
+              button {
+                font-weight: 700;
+                align-items: center;
+                background-color: #673de6;
+                border: none;
+                border-radius: 4px;
+                color: #fff;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                min-height: 48px;
+                padding: 12px 16px;
+                transition: 0.3s ease-in-out;
+                transition-property: color, width, background-color;
+                width: 77%;
+                box-shadow: 0 1px 8px rgba(0, 0, 0, 0.16);
+                &:hover {
+                  background-color: #5025d1;
+                  color: #fff;
+                }
+              }
+            }
+            .guard {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+      .right {
+        max-width: 762px;
+        width: 60.75%;
+        position: relative;
+        .imgBox {
+          width: 115%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
