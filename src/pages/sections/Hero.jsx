@@ -4,7 +4,6 @@ import handmade from "../../assets/images/photos/handmade-ceramics-2x-521363.web
 //Icons
 import { FaCheck } from 'react-icons/fa';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
-import { AiFillStar } from 'react-icons/ai';
 import { SiAdguard } from 'react-icons/si';
 
 import { useEffect, useState } from "react";

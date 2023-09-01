@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: relative;
   width: 100%;
   background-color: white;
   z-index: 1000;
@@ -38,8 +38,8 @@
               position: absolute;
               border-radius: 4px;
               box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+              background: #fff;
               padding: 24px;
-              margin-top: 8px;
               width: 25%;
               right: 175px;
               display: flex;

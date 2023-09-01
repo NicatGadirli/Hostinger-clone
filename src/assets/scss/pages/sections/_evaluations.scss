@@ -1,0 +1,19 @@
+.evaluations {
+  margin-top: 93px;
+  .container {
+    .row {
+      justify-content: space-around;
+      .right {
+        .starinfo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          span {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

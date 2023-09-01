@@ -11,11 +11,12 @@ import { SiTmobile } from 'react-icons/si';
 import Logo from '../assets/images/logo/Logo.png';
 
 //React Hooks
-import { useEffect, useState } from 'react';
+import { useEffect, useState,useRef } from 'react';
 
 const Header = () => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const [scrolled, setScrolled] = useState(false); // Durumu başlangıçta false olarak ayarla
+    const [scrolled, setScrolled] = useState(false);
+    const dropdownRef = useRef(null);
 
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen);
@@ -29,12 +30,21 @@ const Header = () => {
         }
     };
 
+    const handleOutsideClick = (e) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+            setDropdownOpen(false);
+        }
+    };
+
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
+        document.addEventListener('mousedown', handleOutsideClick);
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            document.removeEventListener('mousedown', handleOutsideClick);
         };
     }, []);
+
 
 
     return (
@@ -62,7 +72,7 @@ const Header = () => {
                                     <FaChevronDown className={`chevron ${dropdownOpen ? 'rotated' : ''}`} />
                                 </Link>
                                 {dropdownOpen && (
-                                    <ul className="dropDown">
+                                    <ul className="dropDown" ref={dropdownRef}>
                                         <div className="figure"></div>
                                         <li className="dropDownItem">
                                             <Link to="/">
