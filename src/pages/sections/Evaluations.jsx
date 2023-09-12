@@ -13,23 +13,30 @@ const Evaluations = () => {
                                 <b>Trustpilot</b>
                             </div>
                             <div className="middle">
-                                <GrStar />
-                                <GrStar />
-                                <GrStar />
-                                <GrStar />
-                                <GrStar />
+                                <div className="iconBox">
+                                    <GrStar />
+                                </div>                                <div className="iconBox">
+                                    <GrStar />
+                                </div>                                <div className="iconBox">
+                                    <GrStar />
+                                </div>                                <div className="iconBox">
+                                    <GrStar />
+                                </div>
+                                <div className="iconBox">
+                                    <GrStar />
+                                </div>
                             </div>
                             <div className="bottom">
-                                <p>
+                                <span>
                                     TrustScore
-                                    <strong>4.6 | 19,425</strong>
+                                    <p>4.6 | 19,425</p>
                                     reviews
-                                </p>
+                                </span>
                             </div>
                         </Link>
                     </div>
                     <div className="right">
-                        <p>Google</p>
+                        <strong>Google</strong>
                         <div className="starBox">
                             <GrStar />
                             <GrStar />
@@ -44,6 +51,10 @@ const Evaluations = () => {
                             </span>
                         </div>
                     </div>
+                </div>
+                <div className="contentBox">
+                    <h2>Easy to Start, Easy to Scale</h2>
+                    <p>Try now. It’s risk free with a 30-day money-back guarantee.</p>
                 </div>
             </div>
         </section>
