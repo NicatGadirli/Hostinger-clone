@@ -1,0 +1,39 @@
+.hosting {
+  margin-top: 60px;
+  .container {
+    border: 1px solid #d5dfff;
+    border-radius: 4px;
+    .row {
+      margin-bottom: 40px;
+      padding: 40px 32px 0;
+      .firstCard {
+        width: 30%;
+        border-right: 1px solid #d5dfff;
+        padding-right: 20px;
+        .cardList {
+          .listItem {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            div {
+              display: flex;
+              align-items: center;
+              font-size: 14px;
+              strong {
+                margin-right: 5px;
+              }
+              .check {
+                margin-right: 10px;
+                fill: #00b090;
+              }
+              .info {
+                font-size: 20px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
